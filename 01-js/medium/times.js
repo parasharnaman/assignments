@@ -9,5 +9,22 @@ There is no automated test for this one, this is more for you to understand time
 */
 
 function calculateTime(n) {
-    return 0.01;
+    const currentDate= new Date();
+    const a = currentDate.getTime();
+    let sum=0;
+    for( let i =0; i<n;i++){
+        sum = sum  +i;
+    }
+    const currentDate2= new Date();
+    const b = currentDate2.getTime();
+
+    const ans=(b-a)/1000;
+    return ans;
 }
+let ans = calculateTime(100);
+console.log(`time taken for sum of 100 = ${ans}`);
+ans = calculateTime(100000);
+console.log(`time taken for sum of 100000 = ${ans}`);
+ans = calculateTime(1000000000);
+console.log(`time taken for sum of 1000000000 = ${ans}`);
+
