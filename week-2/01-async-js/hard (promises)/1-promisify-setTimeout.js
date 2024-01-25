@@ -6,14 +6,10 @@ function wait(n) {
   return new Promise(function (ondone) {
     setTimeout(function (){
        ondone("i am doing good");
-    }, n);
+    }, n*1000);
   });
 }
 
-wait(10000).then(okay);
 
-function okay(result) {
-  console.log(result);
-}
 
 module.exports = wait;
