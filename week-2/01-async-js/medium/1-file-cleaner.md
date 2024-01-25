@@ -11,3 +11,4 @@ After the program runs, the output should be
 ```
 hello world my name is raman
 ```
+try to write this with async , await and promises
