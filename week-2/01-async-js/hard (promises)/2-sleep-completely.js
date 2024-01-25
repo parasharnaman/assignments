@@ -5,6 +5,15 @@
  */
 
 function sleep(milliseconds) {
+    const currentdate = new Date();
+    let a =currentdate.getTime();
+    let b=a+milliseconds;
+    while(b>Date.now()){
+
+    }
+    return new Promise(function(ondone){
+        ondone();
+    })
 }
 
 module.exports = sleep;
